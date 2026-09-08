@@ -32,3 +32,7 @@ return view('test',compact('a'));
 });
 
 Route::get('check/{a}',[Testcontroller::class,'check']);
+
+ Route::get('/test1',function(){
+    $user=user::where('email','')
+ })
