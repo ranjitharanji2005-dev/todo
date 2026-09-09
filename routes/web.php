@@ -35,4 +35,5 @@ Route::get('check/{a}',[Testcontroller::class,'check']);
 
  Route::get('/test1',function(){
     $user=user::where('email','ranjitha45.com')->all();
- })
+    dd($user);
+ });
