@@ -34,6 +34,8 @@ return view('test',compact('a'));
 Route::get('check/{a}',[Testcontroller::class,'check']);
 
  Route::get('/test1',function(){
-    $user=User::where('email','ranjitha45.com')->all();
-    dd($user);
+    $user=user::where('email','ranjitha45.com')->all();
+
+    $b='4567';
+    return view('test1',compact('b'));
  });
